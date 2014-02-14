@@ -29,7 +29,7 @@ public class LotsofCoalsMain {
 	
 	private IWorldGenerator eventmanager() {
 		// TODO Auto-generated method stub
-		return eventmanager();
+		return new EventManager();
 	}
 
 
