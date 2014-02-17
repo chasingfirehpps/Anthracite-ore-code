@@ -24,7 +24,9 @@ public class EventManager implements IWorldGenerator{
 
 	private void generateOverworld(World world, Random random, int x, int z) {
 		
-		addOreSpawn(Cfblocks.Anthracite_ore, world, random, x, z, 16, 16, 12 + random.nextInt(2), 10, 15, 64);
+		addOreSpawn(Cfblocks.Anthracite_ore, world, random, x, z, 16, 16, 12 + random.nextInt(2), 12, 15, 64);
+		
+		addOreSpawn(Cfblocks.Bituminous_ore, world, random, x, z, 16, 16, 12 + random.nextInt(2), 13, 15, 72);
 	}
 
 
