@@ -8,6 +8,7 @@ public class Cfitems {
 	//Anthracite
 	public static Item Anthracite;
 	public static Item MinersPickAxe;
+	public static Item Bituminous;
 	
 	public static void init() {
 		Anthracite = new Anthracite(Iteminfo.Anthracite_ID);}
@@ -20,6 +21,13 @@ public class Cfitems {
 				//MinersPickAxe = new Item(Iteminfo.Anthracie_ID);}
 			//public static void addNames1() {
 				//LanguageRegistry.addName(MinersPickAxe, Iteminfo.MinersPickAxe_NAME);
-	}
+	
 //}
-
+//Bituminous
+		public static void init1() {
+			Bituminous = new Item(Iteminfo.Bituminous_ID);}
+			public static void addNames1() {
+				LanguageRegistry.addName(Bituminous, Iteminfo.Bituminous_NAME);}
+			}
+		
+	
