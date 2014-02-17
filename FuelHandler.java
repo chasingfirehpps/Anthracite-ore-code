@@ -11,5 +11,12 @@ public class FuelHandler implements IFuelHandler {
 		if(fuel.itemID == Cfitems.Anthracite.itemID) return 2000;
 		
 		return 0;
+		}
+		
+
+		public int getBurnTime1(ItemStack fuel) {
+			if(fuel.itemID == Cfitems.Bituminous.itemID) return 1800;
+			
+			return 0;
 	}
 	}
