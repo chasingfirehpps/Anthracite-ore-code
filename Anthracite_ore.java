@@ -1,5 +1,8 @@
 package Blocks;
 
+import java.util.Random;
+
+import Items.Cfitems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -17,17 +20,33 @@ public class Anthracite_ore extends Block{
 		setStepSound(Block.soundStoneFootstep);
 		setUnlocalizedName(Blockinfo.Anthracite_ore_UNLOCALIZED_NAME);
 	}
-	@SideOnly(Side.CLIENT)
-	private Icon anthracite_ore;
+	private Icon topIcon;
+	private Icon botIcon;
+	private Icon sideIcon;
 	
-	@SideOnly(Side.CLIENT)
+	@Override
 	public void registerIcons(IconRegister register){
-		this.blockIcon = register.registerIcon("anthracite_ore"); 
-}
-	
-	@SideOnly(Side.CLIENT)
+		topIcon = register.registerIcon(Blockinfo.TEXTURE_LOCATION + ":" + Blockinfo.Anthracite_ore_TOP);
+		botIcon = register.registerIcon(Blockinfo.TEXTURE_LOCATION + ":" + Blockinfo.Anthracite_ore_BOT);
+		sideIcon = register.registerIcon(Blockinfo.TEXTURE_LOCATION + ":" + Blockinfo.Anthracite_ore_SIDE);
+		
+	}
 	@Override
 	public Icon getIcon(int side, int meta) {
-		return anthracite_ore;
+		if (side == 0) {
+			return botIcon;
+		}else if (side == 1) {
+			return topIcon;
+		} else {
+			return sideIcon;
+					
+		}
+	}
+
+
+public int idDropped(int par1, Random par2Random, int par3){
+	return Cfitems.Anthracite.itemID;
+
 }
 }
+
