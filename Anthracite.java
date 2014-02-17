@@ -14,9 +14,13 @@ public class Anthracite extends Item {
 		setMaxStackSize(64);
 		setUnlocalizedName(Iteminfo.Anthracite_UNLOCALIZED_NAME);
 	}
-@Override
-@SideOnly(Side.CLIENT)
-public void registerIcons(IconRegister register){
-	this.itemIcon = register.registerIcon("anthracite"); 
+
+
+	 @Override
+	  public void registerIcons(IconRegister iconRegister)
+	  {
+	    itemIcon = iconRegister.registerIcon("lotsofcoals:anthracite");
+
+
 }
 }
