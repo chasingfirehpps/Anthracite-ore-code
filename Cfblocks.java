@@ -18,6 +18,24 @@ public class Cfblocks {
 		
 		public static void addNames() {
 			LanguageRegistry.addName(Anthracite_ore, Blockinfo.Anthracite_ore_NAME);
+			}
+			
+		//Bituminous
+			
+			public static Block Bituminous_ore;
+			
+			public static void init1() {
+				Anthracite_ore = new Anthracite_ore(Blockinfo.Anthracite_ore_ID);
+				GameRegistry.registerBlock(Anthracite_ore, Blockinfo.Anthracite_ore_KEY);
+				
+				
+			}
+				
+				
+				public static void addNames1() {
+					LanguageRegistry.addName(Anthracite_ore, Blockinfo.Anthracite_ore_NAME);
+			
+		
 		
 		
 
