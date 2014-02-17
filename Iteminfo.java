@@ -2,7 +2,6 @@ package Items;
 
 public class Iteminfo {
 //Anthracite
-	
 	public static final String Anthracite_TEXTURE_LOCATION = "items";
 	public static int Anthracite_ID;
 	public static final String Anthracite_KEY = "Anthracite";
@@ -20,6 +19,15 @@ public class Iteminfo {
 	//public static final String MinersPickAxe_UNLOCALIZED_NAME = "MinersPickAxe";
 	//public static final String MinersPickAxe_NAME = "Miner's Pickaxe";
 	//public static final String MinersPickAxe_Icon = "miner's_pickaxe";
+	
+	//Bituminous
+	public static final String Bituminous_TEXTURE_LOCATION = "items";
+	public static int Bituminous_ID;
+	public static final String Bituminous_KEY = "Bituminous";
+	public static final int Bituminous = 31272;
+	public static final String Bituminous_UNLOCALIZED_NAME = "Bituminous";
+	public static final String Bituminous_NAME = "Bituminous";
+	public static final String Bituminous_Icon = "coal_bituminus";
 	
 
 	
